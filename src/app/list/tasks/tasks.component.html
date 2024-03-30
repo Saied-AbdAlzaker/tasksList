@@ -1,0 +1,16 @@
+<section>
+    <div class="text-center p-3 mb-3 shadow-sm">
+      <h3>Tasks</h3>
+    </div>
+    <div class="container page-header fs-5">
+        <mat-selection-list #shoes >
+            <mat-list-option *ngFor="let shoe of typesOfShoes" >
+              {{shoe}}
+            </mat-list-option>
+          </mat-selection-list>
+          
+          <p>
+            Options selected: {{shoes.selectedOptions.selected.length}}
+          </p>
+    </div>
+  </section>
